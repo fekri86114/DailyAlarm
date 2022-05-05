@@ -26,5 +26,6 @@ public class AboutUsActivity extends AppCompatActivity {
         hastGit = findViewById(R.id.github_hasti);
         hastGit.setOnClickListener(view-> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Hastimohammadi"))));
 
+
     }
 }

@@ -74,16 +74,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Calendar calendar = Calendar.getInstance();
         int timeOfDay = calendar.get(Calendar.HOUR_OF_DAY);
 
-        if (timeOfDay == 8){
-            mediaPlayer.start();
-        }else if (timeOfDay >= 0 && timeOfDay < 12) {
-            Toast.makeText(this, "Good Morning", Toast.LENGTH_LONG).show();
-            Glide.with(this).load("https://i.tribune.com.pk/media/images/5-59555_photo-wallpaper-the-sun-dawn-coffee-mornin1626689182-0/5-59555_photo-wallpaper-the-sun-dawn-coffee-mornin1626689182-0.jpg").
+        if (timeOfDay == 7 || timeOfDay == 8) {
+            Toast.makeText(this, "Good Morning\nLet's start the day!", Toast.LENGTH_LONG).show();
+            Glide.with(this).load("https://c8.alamy.com/comp/GP3MYP/good-morning-GP3MYP.jpg").
                     placeholder(R.drawable.ic_launcher_background).error(R.drawable.broken_image).into(imageView);
 
-        } else if (timeOfDay == 12){
-            mediaPlayer.start();
-        }else if (timeOfDay >= 12 && timeOfDay < 16) {
+        } else if (timeOfDay >= 7 & timeOfDay < 8) {
+            Toast.makeText(this, "It's time for breakfast!", Toast.LENGTH_LONG).show();
+            Glide.with(this).load("http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTDLntfoxLw0CTpjgsjdayzgPSnpeU6VAMgjvNqXkRkISVx20YYYujuLf5wtPsdUFtnjzorOIuOeQ3CTwMPJrE").
+                    placeholder(R.drawable.ic_launcher_background).error(R.drawable.broken_image).into(imageView);
+
+        } else if (timeOfDay >= 11 & timeOfDay < 12) {
+            Toast.makeText(this, "It's time for lunch!", Toast.LENGTH_LONG).show();
+            Glide.with(this).load("http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSV1DnLClpctBRWILcGwq7qbRe-MbFi2Vs1VwRkvhp6XKXxXHOacaZQromCQszFQ1ONbZmw_hkcor-e0aObcnQ").
+                    placeholder(R.drawable.ic_launcher_background).error(R.drawable.broken_image).into(imageView);
+
+        } else if (timeOfDay >= 12 & timeOfDay < 13) {
+            Toast.makeText(this, "It's time for School!", Toast.LENGTH_LONG).show();
+            Glide.with(this).load("https://showmeinstitute.org/wp-content/uploads/2019/12/shutterstock_309241295.jpg").
+                    placeholder(R.drawable.ic_launcher_background).error(R.drawable.broken_image).into(imageView);
+
+        } else if (timeOfDay >= 12 && timeOfDay < 16) {
             Toast.makeText(this, "Good Afternoon", Toast.LENGTH_LONG).show();
             Glide.with(this).load("https://i.pinimg.com/originals/01/a7/ee/01a7ee26d7e2827cc1a7c2fd1f6fbdf6.jpg").
                     placeholder(R.drawable.ic_launcher_background).error(R.drawable.broken_image).into(imageView);
@@ -92,8 +103,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "Good Evening", Toast.LENGTH_LONG).show();
             Glide.with(this).load("https://images.unsplash.com/photo-1586791965591-15d8892f6dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXZlbmluZyUyMHN1bnNldHxlbnwwfHwwfHw%3D&w=1000&q=80").
                     placeholder(R.drawable.ic_launcher_background).error(R.drawable.broken_image).into(imageView);
-
-        }else if(timeOfDay == 22){
 
         } else if (timeOfDay >= 21 && timeOfDay < 24) {
             Toast.makeText(this, "Good Night", Toast.LENGTH_LONG).show();
@@ -112,7 +121,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.pause:
                 mediaPlayer.pause();
                 break;
-
 
 
         }
