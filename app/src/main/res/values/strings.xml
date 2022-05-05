@@ -2,4 +2,11 @@
     <string name="app_name">Example Pro</string>
     <string name="start">Start</string>
     <string name="pause">Pause</string>
+    <string name="about_us">About Us</string>
+    <string name="line_design">--------------------------------------------------------------------------------------------</string>
+    <string name="contact">Contact us</string>
+    <string name="github_mohammadreza">Github: Mohammadreza Fekri</string>
+    <string name="github_hasti">Github: Hasti Mohammadi</string>
+    <string name="project_github">Project github</string>
+    <string name="e_mail_mohammadreza">fekri.mohammadreza86@gmail.com</string>
 </resources>
