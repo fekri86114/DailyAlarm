@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Example Pro</string>
+    <string name="app_name">Daily Alarm</string>
     <string name="start">Start</string>
     <string name="pause">Pause</string>
     <string name="about_us">About Us</string>
@@ -10,4 +10,10 @@
     <string name="project_github">Project github</string>
     <string name="e_mail_mohammadreza">fekri.mohammadreza86@gmail.com</string>
     <string name="e_mail_hasti">hasti.m.lse.bbb@gmail.com</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="start_service">Start Service</string>
+    <string name="start_foreground">Start Foreground ser</string>
+    <string name="start_background">Start Background ser</string>
+    <string name="stop_background_ser">Stop Background Ser</string>
+    <string name="stop_foreground">Stop Foreground</string>
 </resources>
