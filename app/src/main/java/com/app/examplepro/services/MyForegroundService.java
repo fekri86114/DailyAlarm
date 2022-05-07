@@ -1,4 +1,4 @@
-package com.app.examplepro;
+package com.app.examplepro.services;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -10,6 +10,8 @@ import android.os.IBinder;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
+
+import com.app.examplepro.R;
 
 public class MyForegroundService extends Service {
 

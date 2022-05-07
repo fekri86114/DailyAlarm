@@ -1,7 +1,6 @@
 package com.app.examplepro;
 
 import android.content.Intent;
-import android.net.InetAddresses;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -20,7 +19,7 @@ public class AboutUsActivity extends AppCompatActivity {
         proGit = findViewById(R.id.project_github);
         proGit.setOnClickListener(view-> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Rubikamp/Daily_Alarm.git"))));
 
-        mohamadGit = findViewById(R.id.github_mohammadreza);
+        mohamadGit = findViewById(R.id.github_mohamad);
         mohamadGit.setOnClickListener(view-> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/fekri86114"))));
 
         hastGit = findViewById(R.id.github_hasti);

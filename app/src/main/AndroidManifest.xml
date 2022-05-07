@@ -27,11 +27,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".MyBackgroundService">
+        <service android:name=".services.MyBackgroundService">
         </service>
-        <service android:name=".MyForegroundService">
+        <service android:name=".services.MyForegroundService">
         </service>
-        <receiver android:name=".MyBroadcastReceiver"
+        <receiver android:name=".services.MyBroadcastReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
