@@ -51,7 +51,7 @@ public class MyForegroundService extends Service {
             notification = new Notification.Builder(this, CHANNELID)
                     .setContentText("Service is running")
                     .setContentTitle("Daily Alarm")
-                    .setSmallIcon(R.drawable.ic_launcher_background);
+                    .setSmallIcon(R.drawable.ic_android_black_24dp);
         }
 
         startForeground(1001, notification.build());
@@ -60,7 +60,6 @@ public class MyForegroundService extends Service {
 
     @Nullable
     @Override
-    public IBinder onBind(Intent intent) {
-        return null;
-    }
+    public IBinder onBind(Intent intent) { return null; }
+
 }
